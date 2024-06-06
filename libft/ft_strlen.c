@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 12:38:27 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 20:29:40 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/06 11:49:44 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	n;
+	size_t	i;
 
-	n = 0;
-	while (s[n] != 0)
+	i = 0;
+	while (s[i] != 0)
 	{
-		n++;
+		i++;
 	}
-	return (n);
+	return (i);
 }
