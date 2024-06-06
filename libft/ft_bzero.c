@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 10:58:34 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 20:43:10 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/06 11:34:25 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*a;
+	unsigned char	*box;
 	size_t			i;
 
-	a = (unsigned char *)s;
+	box = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		a[i++] = 0;
+		box[i++] = 0;
 	}
 }
