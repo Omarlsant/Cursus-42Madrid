@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 23:04:09 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 20:46:29 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/06 14:10:05 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char	*dst;
-	char	*str;
-	size_t	count;
+	char	*part;
+	char	*source;
+	size_t	i;
 
 	if (dest == 0 && src == 0)
 		return (0);
-	dst = (char *)dest;
-	str = (char *) src;
-	count = 0;
-	while (count < n)
+	part = (char *)dest;
+	source = (char *) src;
+	i = 0;
+	while (i < n)
 	{
-		dst[count] = str[count];
-		count++;
+		part[i] = source[i];
+		i++;
 	}
 	return (dest);
 }
