@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 23:29:09 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 20:48:56 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/08 19:39:03 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = src[i];
 		i++;
 	}
-	if (size != 0)
+	if (i < size)
 		dst[i] = '\0';
 	return (ft_strlen(src));
 }
