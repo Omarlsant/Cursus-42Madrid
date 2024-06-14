@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 23:40:20 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 20:49:38 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/14 16:35:55 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	dstlen;
-	size_t	srclen;
-	size_t	cont;
+	size_t	destino;
+	size_t	sour;
+	size_t	i;
 
-	dstlen = ft_strlen(dst);
-	srclen = ft_strlen(src);
-	cont = 0;
+	destino = ft_strlen(dst);
+	sour = ft_strlen(src);
+	i = 0;
 	if (size == 0)
-		return (srclen);
-	while (dstlen + cont < size - 1 && src[cont] != '\0')
+		return (sour);
+	while (destino + i < size - 1 && src[i] != '\0')
 	{
-		dst[dstlen + cont] = src[cont];
-		cont++;
+		dst[destino + i] = src[i];
+		i++;
 	}
-	dst[dstlen + cont] = '\0';
-	if (size < dstlen)
-		return (size + srclen);
-	return (dstlen + srclen);
+	dst[destino + i] = '\0';
+	if (size < destino)
+		return (size + sour);
+	return (destino + sour);
 }
