@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 21:41:22 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/05 21:46:17 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/14 16:41:45 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	cchar;
+	char	character;
 
-	cchar = (char)c;
+	character = (char)c;
 	while (*s != '\0')
 	{
-		if (*s == cchar)
-			return ((cchar *)s);
+		if (*s == character)
+			return ((character *)s);
 		s++;
 	}
-	if (cchar == '\0')
-		return ((cchar *)s);
+	if (character == '\0')
+		return ((character *)s);
 	return (0);
 }
