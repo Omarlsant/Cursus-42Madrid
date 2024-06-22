@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 16:48:55 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/14 16:59:09 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/22 10:19:09 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
