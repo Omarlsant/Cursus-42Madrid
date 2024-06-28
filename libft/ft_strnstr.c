@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 23:42:43 by olengua-          #+#    #+#             */
-/*   Updated: 2024/06/28 23:52:34 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/06/28 23:58:54 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	hay = (char *)big;
 	n_len = ft_strlen(little);
-	if (n_len == 0 || haystack == little)
+	if (n_len == 0 || big == little)
 		return (hay);
 	while (hay[i] != '\0' && i < len)
 	{
