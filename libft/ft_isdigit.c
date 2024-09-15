@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdio.h>
+#include "libft.h"
+//#include <stdio.h>
 
 int	ft_isdigit(int c)
 {
@@ -24,7 +24,7 @@ int	ft_isdigit(int c)
 
 // Esta es una función que comprueba si un carácter es un dígito (0-9).
 
-int main()
+/* int main()
 {
 	char test_chars[] = {'A', 'z', '1', '*', '5', 'n'};
 	int i = 0;
@@ -38,6 +38,5 @@ int main()
         }
         i++;
     }
-
     return 0;
-}
+} */
