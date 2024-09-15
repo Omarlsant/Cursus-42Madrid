@@ -22,9 +22,10 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-/*Esta es una función que comprueba si un caractér es una letra del alfabeto.
+// Esta es una función que comprueba si un caractér es una letra del alfabeto.
 
-int main() {
+/* int main()
+{
     char test_chars[] = {'A', 'z', '1', '*', 'M', 'n'};
     int i = 0;
     int array_size = sizeof(test_chars) / sizeof(test_chars[0]);
