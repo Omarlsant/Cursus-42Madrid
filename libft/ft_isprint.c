@@ -25,7 +25,6 @@ int	ft_isprint(int c)
 // This is a function that checks if the given character
 // is a printable character
 
-
 /*int main()
 {
     char test_chars[] = {'A', ' ', '\t', '\n', '!', '~', 0x7F, 0x80};
