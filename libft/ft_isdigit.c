@@ -22,7 +22,7 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-// Esta es una función que comprueba si un carácter es un dígito (0-9).
+// This is a function that checks if a character is a digit (0-9)
 
 /* int main()
 {
