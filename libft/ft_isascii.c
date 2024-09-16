@@ -22,8 +22,8 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-// Esta es una función que comprueba si el caracter se puede
-// representar por valores ASCII
+// This is a function that checks if the character 
+//can be represented by ASCII values
 // char test_chars[] = {'A', 'z', '1', '*', '5', 'n', 'ñ', 'é'};
 
 /*int main()
