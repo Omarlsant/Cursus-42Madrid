@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <strings.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -24,3 +26,24 @@ void	ft_bzero(void *s, size_t n)
 		box[i++] = 0;
 	}
 }
+
+// Sets the first 'n' bytes of the memory area pointed to by 's' to zero.
+
+/*int main(void)
+{
+    char buffer[12] = {'1', '1', '1', '1', '1', '1', '1', 
+	'1', '1', '1', '1', '1'};
+
+    printf("Buffer antes de bzero: %s\n", buffer);
+
+    bzero(buffer, sizeof(buffer));
+
+    printf("Buffer después de bzero: ");
+    for (int i = 0; i < sizeof(buffer); i++)
+    {
+        printf("%d ", buffer[i]);
+    }
+    printf("\n");
+
+    return 0;
+}*/
