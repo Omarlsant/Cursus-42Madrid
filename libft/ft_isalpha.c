@@ -22,7 +22,7 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-// Esta es una función que comprueba si un caractér es una letra del alfabeto.
+// This is a function that checks if a character is a letter of the alphabet.
 
 /* int main()
 {
