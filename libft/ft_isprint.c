@@ -22,8 +22,9 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-// Esta es una función que comprueba si el carácter 
-// dado es un carácter imprimible.
+// This is a function that checks if the given character
+// is a printable character
+
 
 /*int main()
 {
