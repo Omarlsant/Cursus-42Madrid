@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_tolower(int c)
 {
@@ -20,3 +21,19 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
+
+/* This function is used to convert an uppercase 
+   character to its lowercase equivalent*/
+
+/*int main() {
+    char str[] = "HOLA, COPILOT!";
+    int i = 0;
+
+    while (str[i]) {
+        str[i] = ft_tolower(str[i]);
+        i++;
+    }
+
+    printf("Cadena convertida: %s\n", str);
+    return 0;
+}*/
