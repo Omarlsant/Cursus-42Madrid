@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -30,3 +32,18 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+//This function is used to copy a block of memory from 
+//one location to another.
+
+/*int main() {
+    char src[] = "Hola, Copilot!";
+    char dest[20];
+
+    ft_memcpy(dest, src, strlen(src) + 1);
+
+    printf("Fuente: %s\n", src);
+    printf("Destino: %s\n", dest);
+
+    return 0;
+}*/
