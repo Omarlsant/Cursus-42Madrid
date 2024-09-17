@@ -33,8 +33,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-//This function is used to copy a block of memory from 
-//one location to another.
+//This function is used to copy a block of memory from one 
+//location to another. It does not handle memory overlaps.
 
 /*int main() {
     char src[] = "Hola, Copilot!";
