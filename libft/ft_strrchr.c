@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -31,3 +32,30 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (result);
 }
+
+/* This function is used to find the last occurrence 
+   of a character in a string*/
+
+/*int main() {
+    const char str[] = "Hola, Copilot!";
+    char ch = 'o';
+    char *result;
+    const char str2[] = "Hola, Copilot!";
+    char ch2 = 'u';
+    char *result2;
+
+    result = ft_strrchr(str, ch);
+    result2 = ft_strrchr(str2, ch2);
+
+    if (result != NULL) {
+        printf("El carácter '%c' se encontró en la cadena: %s\n", ch, result);
+    } else {
+        printf("El carácter '%c' no se encontró en la cadena.\n", ch);
+    }
+    if (result2 != NULL) {
+        printf("El carácter '%c' se encontró en la cadena: %s\n", ch2, result2);
+    } else {
+        printf("El carácter '%c' no se encontró en la cadena.\n", ch2);
+    }
+    return 0;
+}*/
