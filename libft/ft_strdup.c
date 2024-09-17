@@ -11,6 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
 
 char	*ft_strdup(const char *s)
 {
@@ -31,3 +34,33 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
+
+// This function is used to duplicate a string.
+
+/*int main() {
+    const char src[] = "Hola, Copilot!";
+    char *dest;
+
+    dest = ft_strdup(src);
+
+    if (dest != NULL) {
+        printf("Fuente: %s\n", src);
+        printf("Duplicado: %s\n", dest);
+        free(dest);
+    } else {
+        printf("Error al duplicar la cadena.\n");
+    }
+    return 0;
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != 0)
+	{
+		i++;
+	}
+	return (i);
+}*/
