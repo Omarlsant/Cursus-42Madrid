@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
 
 int	ft_toupper(int c)
 {
@@ -20,3 +21,19 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
+
+/* This function is used to convert a lowercase character 
+   to its uppercase equivalent*/
+
+/*int main() {
+    char str[] = "Hola, Copilot!";
+    int i = 0;
+
+    while (str[i]) {
+        str[i] = ft_toupper(str[i]);
+        i++;
+    }
+
+    printf("Cadena convertida: %s\n", str);
+    return 0;
+}*/
