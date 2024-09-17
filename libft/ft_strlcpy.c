@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -26,3 +28,32 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = '\0';
 	return (ft_strlen(src));
 }
+
+/* This function is used to copy a string from ‘src’ to 
+   ‘dst’, ensuring that the resulting string in ‘dst’ 
+   is null-terminated and does not overflow. */
+
+/*int main() {
+    char src[] = "Hola, Copilot!";
+    char dest[20];
+
+    size_t copied = ft_strlcpy(dest, src, sizeof(dest));
+
+    printf("Fuente: %s\n", src);
+    printf("Destino: %s\n", dest);
+    printf("Longitud copiada: %zu\n", copied);
+
+    return 0;
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != 0)
+	{
+		i++;
+	}
+	return (i);
+}*/
