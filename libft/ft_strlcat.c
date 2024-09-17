@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -33,3 +35,33 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (size + sour);
 	return (destino + sour);
 }
+
+/* This function is used to concatenate a string from
+   ‘src’ to the end of ‘dst’, ensuring that the 
+   resulting string in ‘dst’ is null-terminated and 
+   does not overflow. */
+
+/*int main() {
+    char src[] = " Copilot!";
+    char dest[20] = "Hola,";
+
+    size_t total_length = ft_strlcat(dest, src, sizeof(dest));
+
+    printf("Fuente: %s\n", src);
+    printf("Destino: %s\n", dest);
+    printf("Longitud total: %zu\n", total_length);
+
+    return 0;
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] != 0)
+	{
+		i++;
+	}
+	return (i);
+}*/
