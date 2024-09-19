@@ -11,8 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
-void	*memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*string;
 	size_t				i;
@@ -28,3 +30,17 @@ void	*memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
+/* This function is used to search for the first occurrence 
+   of a specific character in a block of memory*/
+
+/*int main() {
+    const char str[] = "Hello, world!";
+    char *result = ft_memchr(str, 'o', strlen(str));
+    if (result != NULL) {
+        printf("Character found at position: %ld\n", result - str);
+    } else {
+        printf("Character not found\n");
+    }
+    return 0;
+}*/
