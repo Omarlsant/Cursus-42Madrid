@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -29,3 +31,19 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/* This function is used to compare blocks of memory.*/
+
+/*int main() {
+    const char str1[] = "Hello, world!";
+    const char str2[] = "Hello, world!";
+    int result = ft_memcmp(str1, str2, strlen(str1));
+    if (result < 0) {
+        printf("str1 is less than str2\n");
+    } else if (result > 0) {
+        printf("str1 is greater than str2\n");
+    } else {
+        printf("str1 is equal to str2\n");
+    }
+    return 0;
+}*/
