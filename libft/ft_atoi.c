@@ -38,6 +38,9 @@ int	ft_atoi(const char *nptr)
 	return (number * sign);
 }
 
+/* This function is used to convert a string that 
+   represents a number into an integer value.*/
+
 /*int main() {
     const char *str1 = "   -1234";
     const char *str2 = "5678";
