@@ -10,7 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 static void	liberate(char **matriz, int nstr)
 {
@@ -61,7 +64,7 @@ static int	ft_strwords(char const *s, char c)
 		palabras++;
 	while (i < len)
 	{
-		if (s[cont] != c && s[i - 1] == c)
+		if (s[i] != c && s[i - 1] == c)
 			palabras++;
 		i++;
 	}
@@ -79,3 +82,28 @@ char	**ft_split(char const *s, char c)
 		return (ft_split2(s, c, matriz, len));
 	return (0);
 }
+
+/* This function is used to split a string (s) into an array 
+   of substrings using a specific delimiter (c). It is used in 
+   cases where it is necessary to separate a string into smaller 
+   parts, such as splitting a list of words separated by 
+   commas, spaces, or other delimiter characters.*/
+
+/*int main()
+{
+	char **result;
+	int i;
+
+	result = ft_split("Hola,esto,es,una,prueba", ',');
+	if (result)
+	{
+		i = 0;
+		while (result[i] != 0)
+		{
+			printf("result[%d] = %s\n", i, result[i]);
+			i++;
+		}
+		liberate(result, i);
+	}
+	return 0;
+}*/
