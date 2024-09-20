@@ -36,8 +36,9 @@ static int	ft_intlen(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	int		len;
+	char			*str;
+	int				len;
+	unsigned int	num;
 
 	len = ft_intlen(n);
 	str = ft_calloc((len + 1), sizeof(char));
@@ -47,16 +48,40 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		str[0] = '-';
-		n = n * -1;
+		num = (unsigned int)(-n);
 	}
-	else if (n == 0)
+	else
+		num = (unsigned int)n;
+	if (n == 0)
 		str[0] = '0';
-	while ((len > 0 && str[0] != '0')
-		|| (len > 1 && str[0] == '-'))
+	while (len > 1 && num != 0)
 	{
-		str[len - 1] = ((n % 10) + '0');
-		n = n / 10;
+		str[len - 1] = ((num % 10) + '0');
+		num = num / 10;
 		len--;
 	}
 	return (str);
 }
+
+/*int main(void)
+{
+    int numbers[] = {0, 123, -123, 2147483647, -2147483648};
+    int num_tests = sizeof(numbers) / sizeof(numbers[0]);
+    char *result;
+
+    for (int i = 0; i < num_tests; i++)
+    {
+        result = ft_itoa(numbers[i]);
+        if (result != NULL)
+        {
+            printf("ft_itoa(%d) = %s\n", numbers[i], result);
+            free(result); // Liberar la memoria asignada
+        }
+        else
+        {
+            printf("ft_itoa(%d) = NULL\n", numbers[i]);
+        }
+    }
+
+    return 0;
+}*/
