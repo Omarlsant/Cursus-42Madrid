@@ -39,3 +39,25 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
    results. The function that is applied takes two arguments: 
    the index of the character in the original string and 
    the character itself */
+
+/*int main(void)
+{
+    char *str = "Hello, World!";
+    char *result;
+
+    // Llamada a ft_strmapi con la función auxiliar
+    result = ft_strmapi(str, my_function);
+
+    if (result)
+    {
+        printf("Original: %s\n", str);
+        printf("Modified: %s\n", result);
+        free(result); // Liberar la memoria asignada
+    }
+    else
+    {
+        printf("Error: Memory allocation failed.\n");
+    }
+
+    return 0;
+}*/
