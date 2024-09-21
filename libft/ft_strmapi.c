@@ -15,16 +15,27 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	len;
+	unsigned int	i;
 	char			*str;
 
-	if (s == 0 && f == 0)
+	if (s == 0 || f == 0)
 		return (0);
 	len = ft_strlen(s);
 	str = malloc((len + 1) * sizeof(char));
 	if (str == 0)
 		return (0);
 	str[len] = 0;
-	while (len-- > 0)
-		str[len] = f(len, s[len]);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
 	return (str);
 }
+
+/* This function is used to apply a given function to each 
+   character of a string, generating a new string with the 
+   results. The function that is applied takes two arguments: 
+   the index of the character in the original string and 
+   the character itself */
