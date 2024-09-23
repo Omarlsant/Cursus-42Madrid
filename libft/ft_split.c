@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
 
 static void	liberate(char **matriz, int nstr)
 {
