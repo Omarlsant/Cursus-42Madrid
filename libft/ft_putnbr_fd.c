@@ -34,3 +34,5 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
+
+/* Writes an integer n to the specified file descriptor fd */
