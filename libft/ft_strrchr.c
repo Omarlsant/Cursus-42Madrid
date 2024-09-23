@@ -15,22 +15,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*result;
+	char	*resultado;
 	char	character;
 
-	if (s == NULL)
-		return (NULL);
 	character = (char)c;
-	result = 0;
+	resultado = 0;
 	while (*s != 0)
 	{
 		if (*s == character)
-			result = ((char *)s);
+			resultado = ((char *)s);
 		s++;
 	}
 	if (character == '\0')
 		return ((char *)s);
-	return (result);
+	return (resultado);
 }
 
 /* This function is used to find the last occurrence 
