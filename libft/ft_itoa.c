@@ -36,28 +36,23 @@ static int	ft_intlen(int n)
 
 char	*ft_itoa(int n)
 {
-	char			*str;
-	int				len;
-	unsigned int	num;
+	char	*str;
+	int		len;
 
 	len = ft_intlen(n);
 	str = ft_calloc((len + 1), sizeof(char));
 	if (str == 0)
 		return (NULL);
 	str[len] = 0;
-	if (n < 0)
-	{
-		str[0] = '-';
-		num = (unsigned int)(-n);
-	}
+	if (n >= 0)
+		n = n * -1;
 	else
-		num = (unsigned int)n;
-	if (n == 0)
-		str[0] = '0';
-	while (len > 1 && num != 0)
+		str[0] = '-';
+	while ((len > 0 && str[0] == 0)
+		|| (len > 1 && str[0] == '-'))
 	{
-		str[len - 1] = ((num % 10) + '0');
-		num = num / 10;
+		str[len - 1] = ((n % 10) * -1 + '0');
+		n = n / 10;
 		len--;
 	}
 	return (str);
