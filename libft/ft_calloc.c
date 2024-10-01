@@ -6,7 +6,7 @@
 /*   By: olengua- <olengua-@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 10:56:19 by olengua-          #+#    #+#             */
-/*   Updated: 2024/07/09 10:56:40 by olengua-         ###   ########.fr       */
+/*   Updated: 2024/09/23 22:30:52 by olengua-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 //#include <stdio.h>
 //#include <stdlib.h>
 
-void	*ft_calloc(size_t nmemb, size_t size)
+/*void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*punt;
 
@@ -23,6 +23,21 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		return (punt);
 	ft_bzero(punt, nmemb * size);
 	return (punt);
+}*/
+
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void		*buffer;
+	size_t		t;
+
+	t = nmemb * size;
+	if (nmemb != 0 && t / nmemb < size)
+		return (NULL);
+	buffer = malloc(nmemb * size);
+	if (!buffer)
+		return (NULL);
+	ft_bzero(buffer, nmemb * size);
+	return (buffer);
 }
 
 //This function is used to allocate dynamic memory (heap) and 
