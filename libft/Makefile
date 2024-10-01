@@ -12,13 +12,11 @@
 
 NAME = libft.a
 
-CC = cc
+CC = gcc
 
 AR = ar
 
 CFLAGS = -Wall -Wextra -Werror
-
-ARFLAGS = -rcs
 
 SRC =	ft_isalpha.c \
 		ft_isdigit.c \
@@ -55,7 +53,6 @@ SRC =	ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
-# Archivos fuente para la parte bonus
 SRC_BONUS =	ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
 			ft_lstsize_bonus.c \
@@ -73,15 +70,15 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJ)
-	ranlib $(NAME)
+	$(AR) -rc $(NAME) $(OBJ)
+	@echo "Library $(NAME) created."
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: $(OBJ_BONUS)
-	$(AR) $(ARFLAGS) $(NAME) $(OBJ_BONUS)
-	ranlib $(NAME)
+	$(AR) -rc $(NAME) $(OBJ_BONUS)
+	@echo "Bonus objects added to $(NAME)."
 
 clean:
 	rm -f $(OBJ) $(OBJ_BONUS)
